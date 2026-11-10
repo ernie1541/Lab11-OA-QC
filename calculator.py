@@ -7,6 +7,15 @@ calculator.py
 One function per operation, in order.
 """
 # First example
+def square_root(a):
+    if a< 0 :
+        raise ValueError("the number input must be greater than zero")
+    return a**0.5
+
+def hypotenuse(a,b):
+    return ((a**2)+(b**2))**0.5
+
+
 def add(a, b): 
     return a+b
     pass
