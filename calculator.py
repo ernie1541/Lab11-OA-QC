@@ -7,11 +7,6 @@ calculator.py
 One function per operation, in order.
 """
 
-
-
-
-
-
 def mul(a, b):
     return a*b
 
@@ -20,9 +15,6 @@ def div(a, b):
         return b/a
     except ZeroDivisionError as e:
         raise ZeroDivisionError
-
-
-
 
 def exp(a, b):
     return a**b
@@ -36,15 +28,12 @@ def square_root(a):
 def hypotenuse(a,b):
     return ((a**2)+(b**2))**0.5
 
-
 def add(a, b): 
     return a+b
     pass
 
 def subtract(a,b):
     return a-b
-
-
 
 def logarithm(a,b):
     try:
