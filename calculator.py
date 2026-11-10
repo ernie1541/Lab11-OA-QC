@@ -6,6 +6,27 @@ calculator.py
 
 One function per operation, in order.
 """
+
+import math
+
+def add(a, b):
+    return a+b
+
+def sub(a, b):
+    return a-b
+
+def mul(a, b):
+    return a*b
+
+def div(a, b):
+    return b/a
+
+def log(a, b):
+    return math.log(b, a)
+
+def exp(a, b):
+    return a**b
+
 # First example
 def square_root(a):
     if a< 0 :
@@ -25,12 +46,6 @@ def subtract(a,b):
 
 def multiply(a,b):
     return a*b
-
-def divide(a,b):
-    try:
-        return b/a
-    except ZeroDivisionError as e:
-        return f"ERROR: {e}"
 
 def logarithm(a,b):
     try:
