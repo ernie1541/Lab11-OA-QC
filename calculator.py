@@ -9,20 +9,21 @@ One function per operation, in order.
 
 import math
 
-def add(a, b):
-    return a+b
 
-def sub(a, b):
-    return a-b
+
+
 
 def mul(a, b):
     return a*b
 
 def div(a, b):
-    return b/a
+    try:
+        return b/a
+    except ZeroDivisionError as e:
+        return f"Error {e}"
 
-def log(a, b):
-    return math.log(b, a)
+
+
 
 def exp(a, b):
     return a**b
@@ -44,14 +45,10 @@ def add(a, b):
 def subtract(a,b):
     return a-b
 
-def multiply(a,b):
-    return a*b
+
 
 def logarithm(a,b):
     try:
         return math.log(b,a)
     except ValueError as V:
         return f"Error: {V}"
-
-def exponent(a,b):
-    return a**b
