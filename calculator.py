@@ -19,7 +19,7 @@ def div(a, b):
     try:
         return b/a
     except ZeroDivisionError as e:
-        return f"Error {e}"
+        raise ZeroDivisionError
 
 
 
