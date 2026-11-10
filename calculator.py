@@ -7,8 +7,6 @@ calculator.py
 One function per operation, in order.
 """
 
-import math
-
 def add(a, b):
     return a+b
 
